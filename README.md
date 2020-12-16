@@ -9,6 +9,6 @@ The system supports "saving" of a form, via a button at the end of the form. Whe
 
 When a user "submits" their form, a XLSX file is generated using the data from the form. A email is also sent to the user containing a copy of their XLSX file. These XLSX files can then be further manipulated to get total counts, or whatever you want/need.
 
-Current known issue: refreshing a form erases all data entered (unless its a saved page it seems). 
+Current known issue: refreshing a form erases all data entered (unless its a saved page it seems), html generate module gets called twice on flask run (not the end of the world but is an issue).
 
 This is in no way a perfect Flask app, but is very minimal and lightweight. Can be easily ran from AWS EC2, simply create a virtual enviornment and import all required files from this repo into it.
